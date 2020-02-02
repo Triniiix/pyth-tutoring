@@ -1,9 +1,7 @@
-"""
-A palindrome is a word that is spelled the same way
-forwards and backwards.
-Examples: racecar, mom, dad
-"""
-
 def detect_palindrome(word):
-	word_reversed = ''.join(word[::-1].lower().split())
-	return word == word_reversed
+    reversedstring = ''.join(word[::-1].lower().split())
+    print(reversedstring)
+    if reversedstring == ''.join(word.lower().split()):
+        return True
+    else:
+        return False
