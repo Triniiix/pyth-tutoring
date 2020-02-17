@@ -6,5 +6,5 @@ app = Flask(__name__)
 def palindrome():
 	word = "Racecar"
 	is_palindrome = detect_palindrome(word)
-	is_palindrome = 'is a palindrome' if is_palindrome else 'is not a palindrome'
-	return detect_palindrome()
+	is_palindrome = word + ' is a palindrome' if is_palindrome else word + ' is not a palindrome'
+	return is_palindrome
