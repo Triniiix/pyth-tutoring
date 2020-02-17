@@ -1,5 +1,5 @@
 from flask import Flask
-from .Palindrome import detect_palindrome
+from .palindrome import detect_palindrome
 app = Flask(__name__)
 
 @app.route("/palindrome")
